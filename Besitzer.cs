@@ -1,4 +1,4 @@
-﻿namespace EinstiegVererbung.Schiff
+﻿namespace SchiffeUndBoote
 {
 	class Besitzer
 	{
