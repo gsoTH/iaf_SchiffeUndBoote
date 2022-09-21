@@ -1,99 +1,16 @@
 ﻿namespace SchiffeUndBoote
 {
-	class Sportboot
-	{
-		private string name;
-		private Besitzer besitzer;
-		private int laengeInMetern;
-		private int breiteInMetern;
-		private int hoheInMetern;
-		private int tiefgangInMetern;
-		private int leistungInKw;
+	class Sportboot : Boot
+    {
+        private int leistungInKw;
 
-		public Sportboot(string name, int laengeInMetern, int breiteInMetern, int hoheInMetern, int tiefgangInMetern, int leistungInKw, Besitzer besitzer)
+		public Sportboot(string name, Besitzer besitzer, int laengeInMetern, int breiteInMetern, int hoheInMetern, int tiefgangInMetern, int leistungInKw)
+			:base(name, besitzer, laengeInMetern, breiteInMetern, hoheInMetern, tiefgangInMetern)
 		{
-			this.name = name;
-			this.laengeInMetern = laengeInMetern;
-			this.breiteInMetern = breiteInMetern;
-			this.hoheInMetern = hoheInMetern;
-			this.tiefgangInMetern = tiefgangInMetern;
 			this.leistungInKw = leistungInKw;
-			this.besitzer = besitzer;
 		}
 
-		public string Name
-		{
-			get
-			{
-				return name;
-			}
-
-			set
-			{
-				name = value;
-			}
-		}
-		public Besitzer Besitzer
-		{
-			get
-			{
-				return besitzer;
-			}
-
-			set
-			{
-				besitzer = value;
-			}
-		}
-		public int LaengeInMetern
-		{
-			get
-			{
-				return laengeInMetern;
-			}
-
-			set
-			{
-				laengeInMetern = value;
-			}
-		}
-		public int BreiteInMetern
-		{
-			get
-			{
-				return breiteInMetern;
-			}
-
-			set
-			{
-				breiteInMetern = value;
-			}
-		}
-		public int HoheInMetern
-		{
-			get
-			{
-				return hoheInMetern;
-			}
-
-			set
-			{
-				hoheInMetern = value;
-			}
-		}
-		public int TiefgangInMetern
-		{
-			get
-			{
-				return tiefgangInMetern;
-			}
-
-			set
-			{
-				tiefgangInMetern = value;
-			}
-		}
-		public int LeistungInKw
+        public int LeistungInKw
 		{
 			get
 			{
