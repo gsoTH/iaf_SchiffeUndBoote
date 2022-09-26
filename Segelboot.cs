@@ -8,16 +8,16 @@
 		private int breiteInMetern;
 		private int hoheInMetern;
 		private int tiefgangInMetern;
-		private int anzahlMasten;
+		private double segelflaecheInQm2;
 
-		public Segelboot(string name, int laengeInMetern, int breiteInMetern, int hoheInMetern, int tiefgangInMetern, int anzahlMasten, Besitzer besitzer)
+		public Segelboot(string name, int laengeInMetern, int breiteInMetern, int hoheInMetern, int tiefgangInMetern, int segelflaecheInQm2, Besitzer besitzer)
 		{
 			this.name = name;
 			this.laengeInMetern = laengeInMetern;
 			this.breiteInMetern = breiteInMetern;
 			this.hoheInMetern = hoheInMetern;
 			this.tiefgangInMetern = tiefgangInMetern;
-			this.anzahlMasten = anzahlMasten;
+			this.segelflaecheInQm2 = segelflaecheInQm2;
 			this.besitzer = besitzer;
 		}
 
@@ -93,16 +93,16 @@
 				tiefgangInMetern = value;
 			}
 		}
-		public int AnzahlMasten
+		public int SegelflaecheInQm2
 		{
 			get
 			{
-				return anzahlMasten;
+				return segelflaecheInQm2;
 			}
 
 			set
 			{
-				anzahlMasten = value;
+				segelflaecheInQm2 = value;
 			}
 		}
 

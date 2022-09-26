@@ -1,6 +1,6 @@
 ﻿namespace SchiffeUndBoote
 {
-	class Sportboot
+	class Motorboot
 	{
 		private string name;
 		private Besitzer besitzer;
@@ -10,7 +10,7 @@
 		private int tiefgangInMetern;
 		private int leistungInKw;
 
-		public Sportboot(string name, int laengeInMetern, int breiteInMetern, int hoheInMetern, int tiefgangInMetern, int leistungInKw, Besitzer besitzer)
+		public Motorboot(string name, int laengeInMetern, int breiteInMetern, int hoheInMetern, int tiefgangInMetern, int leistungInKw, Besitzer besitzer)
 		{
 			this.name = name;
 			this.laengeInMetern = laengeInMetern;
