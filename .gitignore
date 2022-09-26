@@ -348,3 +348,5 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+.$UML-SchiffeUndBoote.drawio.png.dtmp
+.$UML-SchiffeUndBoote.drawio.png.bkp
