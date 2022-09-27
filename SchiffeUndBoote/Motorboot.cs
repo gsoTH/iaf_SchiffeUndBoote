@@ -1,16 +1,16 @@
 ﻿namespace SchiffeUndBoote
 {
-	class Sportboot : Boot
+	class Motorboot : Boot
     {
-        private int leistungInKw;
+        private double leistungInKw;
 
-		public Sportboot(string name, Besitzer besitzer, int laengeInMetern, int breiteInMetern, int hoheInMetern, int tiefgangInMetern, int leistungInKw)
+		public Motorboot(string name, Besitzer besitzer, int laengeInMetern, int breiteInMetern, int hoheInMetern, int tiefgangInMetern, double leistungInKw)
 			:base(name, besitzer, laengeInMetern, breiteInMetern, hoheInMetern, tiefgangInMetern)
 		{
 			this.leistungInKw = leistungInKw;
 		}
 
-        public int LeistungInKw
+        public double LeistungInKw
 		{
 			get
 			{
