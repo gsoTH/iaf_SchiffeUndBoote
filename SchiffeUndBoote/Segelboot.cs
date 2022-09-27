@@ -2,23 +2,23 @@
 {
 	class Segelboot : Boot
 	{
-		private int anzahlMasten;
+		private double segelflaecheInQm2;
 
-		public Segelboot(string name, Besitzer besitzer, int laengeInMetern, int breiteInMetern, int hoheInMetern, int tiefgangInMetern, int anzahlMasten)
+		public Segelboot(string name, Besitzer besitzer, int laengeInMetern, int breiteInMetern, int hoheInMetern, int tiefgangInMetern, double segelflaecheInQm2)
 			: base(name, besitzer, laengeInMetern, breiteInMetern, hoheInMetern, tiefgangInMetern)
 		{
-			this.anzahlMasten = anzahlMasten;
+			this.segelflaecheInQm2 = segelflaecheInQm2;
 		}
-		public int AnzahlMasten
+		public double SegelflaecheInQm2
 		{
 			get
 			{
-				return anzahlMasten;
+				return segelflaecheInQm2;
 			}
 
 			set
 			{
-				anzahlMasten = value;
+				segelflaecheInQm2 = value;
 			}
 		}
 

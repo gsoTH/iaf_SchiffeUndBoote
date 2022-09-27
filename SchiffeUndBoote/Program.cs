@@ -15,7 +15,7 @@ namespace SchiffeUndBoote
 
             Containerschiff c = new Containerschiff("Ever Given", china, 400,59, 33, 16, 20124, 59300);
             Tankschiff t = new Tankschiff("CABO SOUNION", deutschland, 229, 32, 15, 8, 40000, 20000);
-            Segelboot falke = new Segelboot("Unsinkbar II", chef, 5, 3, 2, 1, 1);
+            Segelboot falke = new Segelboot("Unsinkbar II", chef, 5, 3, 2, 1, 5.0);
             Motorboot iltis = new Motorboot("Unsink-Bar", chef, 16, 5, 5, 3, 25.0);
         }
     }
