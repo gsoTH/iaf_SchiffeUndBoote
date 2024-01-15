@@ -1,5 +1,6 @@
 #oop-vererbung_SchiffeUndBoote
 Das vorliegende Projekt enthält einige C#-Klassen, deren Struktur im nachfolgenden UML-Klassendiagramm dargestellt wird.
+
 ![](UML-SchiffeUndBoote.drawio.png)
 
 
