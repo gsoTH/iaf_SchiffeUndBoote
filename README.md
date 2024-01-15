@@ -1,4 +1,4 @@
-# 11.4_vererbung_SchiffeUndBoote
+#oop-vererbung_SchiffeUndBoote
 Das vorliegende Projekt enthält einige C#-Klassen, deren Struktur im nachfolgenden UML-Klassendiagramm dargestellt wird.
 ![](UML-SchiffeUndBoote.drawio.png)
 
@@ -24,13 +24,11 @@ Sportboot iltis = new Sportboot("Unsink-Bar", chef, 16, 5, 5, 3, 25);
 
 3)  Erweitern Sie den Code, damit die folgenden Anforderungen erfüllt werden:
 
-    a)  Über `ist_panamax` soll abgefragt werden können, ob man mit diesem Wasserfahrzeug durch den Panamakanal (alte Schleusen) passt.
+    a)  Über `IstPanamx` soll abgefragt werden können, ob man mit diesem Wasserfahrzeug durch den Panamakanal (alte Schleusen) passt.
 
-    b)  'ist_scheinfrei': Gibt Auskunft darüber, ob man einen Sportbootführerschein Binnen benötigt, um hiermit zu fahren. Allgemein gilt: Länge bis 15m, Segelfläche nicht größer als 6m², LeistungInKw nicht höher als 11.
+    b)  'IstScheinfrei': Gibt Auskunft darüber, ob man einen Sportbootführerschein Binnen benötigt, um hiermit zu fahren. Allgemein gilt: Länge bis 15m, Segelfläche nicht größer als 6m², LeistungInKw nicht höher als 11.
 
-    c)  lloyd_registrierung: Setzt sich bei allen Wasserfahrzeugen aus dem Namen in UpperCase zusammen. Sofern vorhanden soll der Nachname und Wohnort des Besitzers ebenfalls ausgegeben werden. Beispiele (bezogen auf die obigen Objekte):
+    c)  LloydRegistrierung: Setzt sich bei allen Wasserfahrzeugen aus dem Namen in UpperCase zusammen. Sofern vorhanden soll der Nachname und Wohnort des Besitzers ebenfalls ausgegeben werden. Beispiele (bezogen auf die obigen Objekte):
 
         1. `EVERGIVEN`
         2. `UNSINKBARII--Holmes--London`
-
-4)  Ergänzen Sie das Projekt um geeignete UnitTests.
