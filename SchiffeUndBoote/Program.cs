@@ -1,9 +1,11 @@
 ﻿using System;
 
+
 namespace SchiffeUndBoote
 {
     public class Program
     {
+        [STAThread]
         public static void Main()
         {
             Land china = new Land("China", "CH");
@@ -17,6 +19,11 @@ namespace SchiffeUndBoote
             Tankschiff t = new Tankschiff("CABO SOUNION", deutschland, 229, 32, 15, 8, 40000, 20000);
             Segelboot falke = new Segelboot("Unsinkbar II", chef, 5, 3, 2, 1, 5.0);
             Motorboot iltis = new Motorboot("Unsink-Bar", chef, 16, 5, 5, 3, 25.0);
+
+            ApplicationConfiguration.Initialize();
+            Application.Run(new FrmMain());
         }
+
+
     }
 }
