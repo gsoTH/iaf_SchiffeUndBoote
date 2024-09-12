@@ -1,17 +1,30 @@
-#oop-vererbung_SchiffeUndBoote
+# SchiffeUndBoote
+
 Das vorliegende Projekt enthält einige C#-Klassen, deren Struktur im nachfolgenden UML-Klassendiagramm dargestellt wird [^1].
 
 ![](UML-SchiffeUndBoote.drawio.png)
 
 
 ## Arbeitsauftrag
-1)  Refactoring: Wenden Sie das [DRY-Prinzip](https://www.generic.de/blog/dry-vs-kiss-clean-code-prinzipien) an, indem Sie Vererbung einsetzen um Wiederholungen zu minimieren!
+1) Erstellen Sie - beispielhaft - Objekte auf Basis der vorhandenen Klassen. Orientieren Sie sich dabei an diesem C#-Code:
+```cs
+Land china = new Land("China", "CH");
+Land deutschland = new Land ("Deutschland", "D");
+Land uk = new Land("United Kindgom", "UK");
+Besitzer chef = new Besitzer("Sherlock", "Holmes", "Baker Street", "221B", "NW1", "London", uk);
+
+Containerschiff c = new Containerschiff("Ever Given", china, 400,59, 33, 16, 20124, 59300);
+Tankschiff t = new Tankschiff("CABO SOUNION", deutschland, 229, 32, 15, 8, 40000, 20000);
+Segelboot falke = new Segelboot("Unsinkbar II", chef, 5, 3, 2, 1, 1);
+Sportboot iltis = new Sportboot("Unsink-Bar", chef, 16, 5, 5, 3, 25);
+```
+2)  Refactoring: Wenden Sie das [DRY-Prinzip](https://www.generic.de/blog/dry-vs-kiss-clean-code-prinzipien) an, indem Sie Vererbung einsetzen um Wiederholungen zu minimieren!
 
     - Suchen Sie nach gemeinsamen Attributen in den Klassen um daraus geeignete Eltern-Klassen abzuleiten!
 
-    - Ihr Refactoring ist erfolgreich, wenn alle Testfälle weiterhin erfolgreich sind.
+    - Ihr Refactoring ist erfolgreich, wenn die Objekte aus (1) immer noch erzeugt werden können, aber die Klassen frei von Wiederholungen sind.
 
-2)  Erweitern Sie den Code, damit die folgenden Anforderungen erfüllt werden:
+3)  Erweitern Sie den Code, damit die folgenden Anforderungen erfüllt werden:
 
     a)  Über `ist_panamax` soll abgefragt werden können, ob man mit diesem Wasserfahrzeug durch den Panamakanal (alte Schleusen) passt.
 
