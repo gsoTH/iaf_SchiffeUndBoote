@@ -6,23 +6,17 @@ Das vorliegende Projekt enthält einige C#-Klassen, deren Struktur im nachfolgen
 
 
 ## Arbeitsauftrag
-1) Erstellen Sie - beispielhaft - Objekte auf Basis der vorhandenen Klassen. Orientieren Sie sich dabei an diesem C#-Code:
-```cs
-Land china = new Land("China", "CH");
-Land deutschland = new Land ("Deutschland", "D");
-Land uk = new Land("United Kindgom", "UK");
-Besitzer chef = new Besitzer("Sherlock", "Holmes", "Baker Street", "221B", "NW1", "London", uk);
-
-Containerschiff c = new Containerschiff("Ever Given", china, 400,59, 33, 16, 20124, 59300);
-Tankschiff t = new Tankschiff("CABO SOUNION", deutschland, 229, 32, 15, 8, 40000, 20000);
-Segelboot falke = new Segelboot("Unsinkbar II", chef, 5, 3, 2, 1, 1);
-Sportboot iltis = new Sportboot("Unsink-Bar", chef, 16, 5, 5, 3, 25);
-```
-2)  Refactoring: Wenden Sie das [DRY-Prinzip](https://www.generic.de/blog/dry-vs-kiss-clean-code-prinzipien) an, indem Sie Vererbung einsetzen um Wiederholungen zu minimieren!
+1)  Refactoring: Wenden Sie das [DRY-Prinzip](https://www.generic.de/blog/dry-vs-kiss-clean-code-prinzipien) an, indem Sie Vererbung einsetzen um Wiederholungen zu minimieren!
 
     - Suchen Sie nach gemeinsamen Attributen in den Klassen um daraus geeignete Eltern-Klassen abzuleiten!
 
-    - Ihr Refactoring ist erfolgreich, wenn die Objekte aus (1) immer noch erzeugt werden können, aber die Klassen frei von Wiederholungen sind.
+    - Ihr Refactoring ist erfolgreich, wenn die Objekte in der Program.cs immer noch erzeugt werden können, aber die Klassen frei von Wiederholungen sind.
+
+2)  Implementieren Sie eine Konsolenausgabe:
+
+    a) Geben Sie den Namen aller Objekte aus.
+    
+    b) Geben Sie zusätzlich den Typ aller Objekte aus.
 
 3)  Erweitern Sie den Code, damit die folgenden Anforderungen erfüllt werden:
 

@@ -10,7 +10,7 @@
 		private int tiefgangInMetern;
 		private double segelflaecheInQm2;
 
-		public Segelboot(string name, int laengeInMetern, int breiteInMetern, int hoheInMetern, int tiefgangInMetern, int segelflaecheInQm2, Besitzer besitzer)
+		public Segelboot(string name, Besitzer besitzer, int laengeInMetern, int breiteInMetern, int hoheInMetern, int tiefgangInMetern, int segelflaecheInQm2)
 		{
 			this.name = name;
 			this.laengeInMetern = laengeInMetern;
@@ -93,7 +93,7 @@
 				tiefgangInMetern = value;
 			}
 		}
-		public int SegelflaecheInQm2
+		public double SegelflaecheInQm2
 		{
 			get
 			{

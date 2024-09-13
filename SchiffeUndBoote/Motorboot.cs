@@ -10,7 +10,7 @@
 		private int tiefgangInMetern;
 		private int leistungInKw;
 
-		public Motorboot(string name, int laengeInMetern, int breiteInMetern, int hoheInMetern, int tiefgangInMetern, int leistungInKw, Besitzer besitzer)
+		public Motorboot(string name, Besitzer besitzer, int laengeInMetern, int breiteInMetern, int hoheInMetern, int tiefgangInMetern, int leistungInKw)
 		{
 			this.name = name;
 			this.laengeInMetern = laengeInMetern;
