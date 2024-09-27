@@ -16,15 +16,15 @@ Das vorliegende Projekt enthält einige C#-Klassen, deren Struktur im nachfolgen
 
     a) Geben Sie den Namen aller Objekte aus.
     
-    b) Geben Sie zusätzlich den Typ aller Objekte aus.
+    b) Geben Sie zusätzlich den Typ aller Objekte aus. Tipp: [getType()](https://learn.microsoft.com/en-us/dotnet/api/system.object.gettype?view=net-8.0&redirectedfrom=MSDN#System_Object_GetType)
 
-3)  Erweitern Sie den Code, damit die folgenden Anforderungen erfüllt werden:
+4)  Erweitern Sie den Code, damit die folgenden Anforderungen erfüllt werden:
 
-    a)  Über `ist_panamax` soll abgefragt werden können, ob man mit diesem Wasserfahrzeug durch den Panamakanal (alte Schleusen) passt.
+    a)  Über `ist_panamax` soll abgefragt werden können, ob man mit diesem Wasserfahrzeug durch die alten Schleusen des Panamakanals passt (Maximale Länge = 294m, Breite = 32m, Tiefe=12m).
 
     b)  `ist_scheinfrei`: Gibt Auskunft darüber, ob man einen Sportbootführerschein Binnen benötigt, um hiermit zu fahren. Allgemein gilt: Länge bis 15m, Segelfläche nicht größer als 6m², LeistungInKw nicht höher als 11.
 
-    c)  `lloyd_registrierung`: Setzt sich bei allen Wasserfahrzeugen aus dem Namen in UpperCase zusammen. Sofern vorhanden soll der Nachname und Wohnort des Besitzers ebenfalls ausgegeben werden. Beispiele (bezogen auf die obigen Objekte):
+    c)  `lloyd_registrierung`: Setzt sich bei allen Wasserfahrzeugen aus dem Namen in UpperCase zusammen. Sofern vorhanden soll der Nachname und Wohnort des Besitzers ebenfalls ausgegeben werden. Beispiele (bezogen auf die Objekte aus der Program.cs):
 
         - "EVERGIVEN"
 
